@@ -1,0 +1,184 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.kanban-board {
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.display-button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  margin-bottom: 10px;
+}
+
+.dropdown-item label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.dropdown-item select {
+  width: 100%;
+  padding: 5px;
+}
+
+.board-columns {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.column {
+  min-width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.column-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.status-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.ticket-count {
+  margin-left: auto;
+  background-color: #e0e0e0;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.card-status-icon {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.card-status-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.card-content {
+  flex: 1;
+  padding: 10px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.card-id {
+  color: #6b778c;
+  font-size: 14px;
+}
+
+.card-menu-icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.card-title {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card-priority, .card-tag {
+  display: flex;
+  align-items: center;
+}
+
+.priority-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.card-tag {
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .board-columns {
+    flex-direction: column;
+  }
+
+  .column {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .kanban-board {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .card-id, .card-tag {
+    font-size: 12px;
+  }
+}
